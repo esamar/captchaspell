@@ -1,0 +1,113 @@
+<head>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+	
+		body{
+
+			font-family: 'Roboto', sans-serif;
+
+		}
+
+		.n-grama
+		{
+			text-align: center;
+			font-size: 15pt;
+			color: rgb(116, 116, 116);
+		}
+
+		input
+		{
+			background: rgb(217, 247, 232);
+			padding: 5px;
+			border-radius: 7px;
+			font-weight: 700;
+			border: none;
+			outline: none;
+			text-align: center;
+			font-size: 15pt;
+			width: calc(100% - 20px);
+			margin: 5;
+		}
+
+		span
+		{
+
+			background: rgb(143, 206, 175);
+			padding: 5px;
+			border-radius: 7px;
+			font-weight: 700;
+			color: black;
+			position: relative;
+
+		}
+		span::after
+		{
+			content: "";
+			position:absolute;
+			left: calc(50% - 10px);
+			top: 25px;
+			width: 0;
+			height: 0;
+			border-right: 10px solid transparent;
+			border-top: 10px solid transparent;
+			border-left: 10px solid transparent;
+			border-bottom: 10px solid rgb(49, 49, 54);
+		}
+		.suggest{
+			background-color: rgb(49, 49, 54);
+			overflow: hidden;
+			text-align: center;
+			padding: 0;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 5px;
+			margin-top: 0;
+		}
+		ul{
+			padding: 0%;
+		}	
+		li{
+			display: inline;
+			background-color: rgba(90, 66, 104, 0.356);
+			color:white;
+			text-align: center;
+			padding-right: 5px;
+			padding-left: 5px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		li:hover
+		{
+			background-color: rgba(197, 120, 241, 0.836);
+			cursor: pointer;
+		}
+		p{
+			margin: 15;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div style='width: 350px;'>
+		<div class='n-grama'>
+			<p>Es un <span >herror</span> ortografico</p>
+		</div>
+		<div class="suggest">
+			<input type="text" value="ortografico">
+			<ul>
+				<li >error</li>
+				<li >horror</li>
+				<li >honor</li>
+				<li >herrero</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+</body>
+<script>
+
+
+</script>
